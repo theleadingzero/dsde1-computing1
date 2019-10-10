@@ -37,7 +37,7 @@ exit()
 ```python
 a = 10+5
 b = 3-99
-c = 5.5.*3.2
+c = 5.5*3.2
 ```
 3. Nothing prints immediately. Now type:
 
