@@ -127,7 +127,7 @@ A `while` loop will keep repeating until its expression is `False`. A `for` loop
 
 __HINT__: Look into the modulo operator `%`.
 
-![fizz buzz flow diagram](https://github.com/theleadingzero/dsde1-computing1/blob/master/Week-3/fizzbuzz.png)
+![fizz buzz flow diagram](./img/fizzbuzz.png)
 
 # Thursday - Writing Functions and Testing Them
 
