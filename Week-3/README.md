@@ -144,7 +144,7 @@ To warm up, you'll edit a Python file with a collection of simple functions.
 import toys
 ```
 
-4. You can call functions and see if they do what you expect.
+5. You can call functions and see if they do what you expect.
 
 ```python
 toys.print_inc(5)
