@@ -6,6 +6,8 @@ Unit tests for toy functions.
 
 
 import unittest
+import unittest.mock
+import io
 
 import toys as toys
 
@@ -14,8 +16,11 @@ class TestSum(unittest.TestCase):
         '''
         Test that it can increment an integer
         '''
-        result = toys.inc_return(10)
-        self.assertEqual(result, 11)
+        with unittest.mock.patch('sys.stdout', new=io.StringIO()) as fake_stdout:
+            toys.inc(10)
+        
+        result = fake_stdout.getvalue()
+        self.assertEqual(result, '11\n')
 
     def test_sum(self):
         '''
@@ -36,14 +41,14 @@ class TestSum(unittest.TestCase):
         Test can detect an odd number
         '''
         result = toys.is_even(5)
-        self.assertFalse(result)
+        self.assertIs(result, False)
 
     def test_is_even(self):
         '''
         Test can detect an even number
         '''
         result = toys.is_even(8)
-        self.assertTrue(result)
+        self.assertIs(result, True)
     
     def test_string(self):
         '''
