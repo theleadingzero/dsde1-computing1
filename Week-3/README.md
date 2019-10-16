@@ -188,20 +188,3 @@ python -m unittest test_pendulum
 
 Correct your code if there are any errors. If the output is that it ran tests and everything is 'OK', then that means your functions passed all the tests. If 'FAILED' is printed instead, then the lines above where it printed 'FAILED' will list what went wrong including what the answer was that your code produced and what the expected answer was.
 
-## Stretch Exercise: Interactive text-based adventure game
-Text-based adventure games are an early form of computer games and come from an era when only text was available as the input and output to a computer. This is before even Pong was available. 
-
-Have a look online to see what examples of text-based games you can find. [This is a good place to start.](https://www.makeuseof.com/tag/browser-text-based-games/)
-
-Design your own text-based adventure game. Start small - have the user try to navigate only 3-4 rooms or spaces to find a hidden treasure.
-
-Use the file `adventure.py` in the Week-3 folder as your starting point.
-
-Ensure that your code passes the tests when running:
-
-``` 
-python -m unittest test_adventure
-```
-
-
-__TIP:__ Don't restrict yourself to the screen. Draw out your game on paper and use that to guide you when writing the code. Draw out any flow diagrams for decisions that need to be made in the game.
