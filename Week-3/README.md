@@ -24,20 +24,30 @@ git config --global user.email "email@example.com"
 
 ![image of fork button](./img/fork-button.png)
 
-2. If you want to, you can set your repo to be private by adjusting the settings of the repo. This means other random internet users won't be able to see your code. On the Github page for you newly forked repository, click on the settings tab. 
 
-![image of settings tab](./img/settings-tab.png)
+## Cloning a Repository
+1. You know need to make a local copy of the repository on your computer so that you can edit the code and add files. You don't want to just download the zip file of the repo as it won't contain the change change recorded by git. Go to your fork of the `dsde1-computing1` repo. You could see the green `Clone or download` button on the left side of window. If you don't you are probably in one of the week folders, go to the top folder.
 
-3. If you want to make the repo private then you can add the lecturer as a collaborator so that only she can see your code. Click on the Collaborators menu on the left of the window. You will be asked enter your password again. You then can add the user theleadingzero as a collaborator. 
+2. Click on the green `Clone or download` button. Make the sure the option is for SSH not HTTPS. Copy the text displayed. It should start with 'git@github.com:'.
 
-![image of collaborators menu](./img/collaborators-menu.png)
+![image of clone button](./img/clone.png)
+
+3. Open a terminal. `cd` to the location on your computer where you would like the code to be located. Type the following into the terminal, replacing the text `paste-here` with the text you copied from Github.
+
+```
+git clone paste-here
+```
+
+__TIP__: You could also use a version control application to help you clone and manage repositories. [SourceTree](https://www.sourcetreeapp.com/) is one open source option or you use the [Github Desktop application](https://desktop.github.com/).
+
+
 
 ## Making Your First Commit
-1. You will now use your fork of the repo for storing your weekly exercises. Find the Python code you wrote in Week 2 and add it to the `Week-2` folder on your computer.
+1. You will now use your fork of the repo for storing your weekly exercises. Find the Python code you wrote in Week 2 and add it to the `Week-2` folder on your computer within the `dsde1-computing1` folders now being tracked in your repository.
 
 2. Commit your added code and push it to the repo. We'll walk through the steps here, but you can also reference the [VS Code documentation](https://code.visualstudio.com/docs/editor/versioncontrol#_commit). 
 
-3.Open the file in VS Code. On the left click on the source control button. It will open a new panel in the VS Code interface.
+3. Open the file in VS Code. On the left click on the source control button. It will open a new panel in the VS Code interface.
 
 ![image of source control button](./img/src-control-button.png)
 
@@ -61,8 +71,10 @@ git config --global user.email "email@example.com"
 
 9. Check in the online interface for Github to check that you can now see your code there.
 
+
+
 ## Using Github for Exercises From Now On
-You now have a repo set up in Github and on your computer. You will start using code files that are in the repo in your exercises. You can also save your exercises in this repo and are encouraged to do so. Using git will become easier only with practice.
+You now have a repo set up in Github and on your computer. You will start using code files that are in the repo in your exercises. You can also save your exercises in this repo and are encouraged to do so. Using git will become easier only with practice - it's completely normal for it to be frustrating and confusing at first.
 
 Note that you will be expected to use git and Github to fork and commit to repositories in both Assessments.
 
@@ -176,4 +188,20 @@ python -m unittest test_pendulum
 
 Correct your code if there are any errors. If the output is that it ran tests and everything is 'OK', then that means your functions passed all the tests. If 'FAILED' is printed instead, then the lines above where it printed 'FAILED' will list what went wrong including what the answer was that your code produced and what the expected answer was.
 
+## Stretch Exercise: Interactive text-based adventure game
+Text-based adventure games are an early form of computer games and come from an era when only text was available as the input and output to a computer. This is before even Pong was available. 
 
+Have a look online to see what examples of text-based games you can find. [This is a good place to start.](https://www.makeuseof.com/tag/browser-text-based-games/)
+
+Design your own text-based adventure game. Start small - have the user try to navigate only 3-4 rooms or spaces to find a hidden treasure.
+
+Use the file `adventure.py` in the Week-3 folder as your starting point.
+
+Ensure that your code passes the tests when running:
+
+``` 
+python -m unittest test_adventure
+```
+
+
+__TIP:__ Don't restrict yourself to the screen. Draw out your game on paper and use that to guide you when writing the code. Draw out any flow diagrams for decisions that need to be made in the game.
