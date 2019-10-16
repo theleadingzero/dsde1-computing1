@@ -22,6 +22,13 @@ class TestSum(unittest.TestCase):
         result = fake_stdout.getvalue()
         self.assertEqual(result, '11\n')
 
+    def test_inc_return(self):
+        '''
+        Test that it can sum two integers
+        '''
+        result = toys.inc_return(9)
+        self.assertEqual(result, 10)
+
     def test_sum(self):
         '''
         Test that it can sum two integers
