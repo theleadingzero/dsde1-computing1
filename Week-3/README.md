@@ -12,7 +12,7 @@ We will then start building more complex code and learn how to document it along
 2. Set up the git config file on your computer by setting the user name and email address. You can optionally set the other fields, if you want. You will need to only do this once. See the [Github tutorial on setting your username] (https://help.github.com/en/articles/setting-your-username-in-git) and [setting the email address in git](https://help.github.com/en/articles/setting-your-commit-email-address). You can also refer to pg 11 of Pro Git ebook for more details. To set the same username and email address for all git repos, in the terminal type the following:
 
 ```
-git config --global user.namer "my-user-name"
+git config --global user.name "my-user-name"
 git config --global user.email "email@example.com"
 ```
 
