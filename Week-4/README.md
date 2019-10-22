@@ -42,25 +42,19 @@ Once you've done the above once, the following steps will let you update your re
 
 1. Make sure you have any changes to your repo commited and pushed.
 
-6. Type in the following command. This will request any changes from the master repo and save them in a new branch called `upstream`.
+2. Type in the following command. This will request any changes from the master repo and save them in a new branch called `upstream`.
 
 ```
 git fetch upstream
 ```
 
-7. Now you will request to pull all the changes from the original repo into your branch called `upstream`.
-
-```
-git fetch upstream
-```
-
-8. You will now switch back to your repo's `master` branch.
+3. You will now switch back to your repo's `master` branch.
 
 ```
 git checkout master
 ```
 
-9. You will now merge the changes you fetched with your local repo. If there are any conflicting changes,
+4. You will now merge the changes you fetched with your local repo. If there are any conflicting changes,
 
 ```
 git merge upstream/master
