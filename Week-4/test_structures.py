@@ -1,5 +1,5 @@
 '''
-test_toys.py
+test_structures.py
 
 Unit tests for structures functions.
 '''
@@ -11,7 +11,7 @@ import io
 
 import structures as st
 
-class TestSum(unittest.TestCase):
+class TestStructures(unittest.TestCase):
     def set_up(self):
         pass
 
@@ -63,29 +63,29 @@ class TestSum(unittest.TestCase):
         '''
         Test palindrome sentence
         '''
-        result = st.palindrome_word("Was it a car or a cat I saw")
+        result = st.palindrome_sentence("Was it a car or a cat I saw")
         self.assertIs(result, True)
 
     def test_palindrome_sentence2(self):
         '''
         Test palindrome sentence
         '''
-        result = st.palindrome_word("Random sentence")
+        result = st.palindrome_sentence("Random sentence")
         self.assertIs(result, False)
 
     def test_palindrome_sentence3(self):
         '''
         Test palindrome sentence
         '''
-        result = st.palindrome_word(" Do geese see God  ")
+        result = st.palindrome_sentence(" Do geese see God  ")
         self.assertIs(result, True)
 
     def test_concatenate_sentences1(self):
         '''
         Test sentence concatenation
         '''
-        results = st.concatenate_sentences("First sentence.", "Second sentence.")
-        self.assertEqual(results, "First sentence. Second sentence.")
+        result = st.concatenate_sentences("First sentence.", "Second sentence.")
+        self.assertEqual(result, "First sentence. Second sentence.")
 
      #def test_concatenate_sentences2(self):
      #   '''
@@ -121,10 +121,8 @@ class TestSum(unittest.TestCase):
         '''
         Test
         '''
-        result = st.merge_dictionaries({"a": 1, "c": 3}, {"b" : 2, "d": 4})
-        self.assertEqual(result, {"a": 1, "c": 3, "b" : 2, "d": 4})
-
-
+        result = st.merge_dictionaries({"a": 1, "c": 3}, {"b": 2, "d": 4})
+        self.assertEqual(result, {"a": 1, "c": 3, "b": 2, "d": 4})
 
 
 if __name__ == '__main__':

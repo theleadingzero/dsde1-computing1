@@ -1,64 +1,6 @@
 # Week 4 Exercises
 
-# Tuesday - Updating from Github and More on Datatypes
-
-## Updating Your Forked Repo
-
-Changes will be made in the original repo and new files will be added as the weeks progress. You will want to make sure you update your repo with those changes. This is called syncing the fork.
-
-### One-Time Set Up
-
-You only need to do these steps once.
-
-1. Open a terminal and `cd` to your copy of `dsde-computing1`.
-
-2. Type in the following. If both the URLs that are printed are the same, then you need to do the following steps. If the one labelled `(fetch)` is `git@github.com:theleadingzero/dsde1-computing1.git` then you can skip to the next section to update your repo.
-
-```
-git remote -v
-```
-
-3. You need to tell your repo where to look for updates (the original repo). Do this by typing the following into the terminal.
-
-```
-git remote add upstream git@github.com:theleadingzero/dsde1-computing1.git
-```
-
-__NOTE__: If you are using https instead of ssh, the you instead want
-
-```
-git remote add upstream https://github.com/theleadingzero/dsde1-computing1.git
-```
-
-4. Type in the following again. This time it should show an URL with your username for `(push)` and one the `theleadingzero` for `(fetch)`.
-
-```
-git remote -v
-```
-
-## How to Update Your Repo
-
-Once you've done the above once, the following steps will let you update your repo.
-
-1. Make sure you have any changes to your repo commited and pushed.
-
-2. Type in the following command. This will request any changes from the master repo and save them in a new branch called `upstream`.
-
-```
-git fetch upstream
-```
-
-3. You will now switch back to your repo's `master` branch.
-
-```
-git checkout master
-```
-
-4. You will now merge the changes you fetched with your local repo. If there are any conflicting changes,
-
-```
-git merge upstream/master
-```
+# Tuesday - More on Datatypes
 
 
 ## Manipulating Data Structures
@@ -92,3 +34,14 @@ pylint fuzzy.py
 
 2. Run pylint on your `fuzzy.py` and fix the issues.
 
+# Thursday - More on Functions
+
+## Default and Keyword Values
+
+1. Open up `keywords.py` and follow the instructions in the comments.
+
+2. Run the test file to determine if the functions work correctly.
+
+```
+python -m unittest test_keywords.py
+```
