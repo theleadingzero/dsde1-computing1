@@ -45,3 +45,5 @@ pylint fuzzy.py
 ```
 python -m unittest test_keywords.py
 ```
+
+3. Run your code through PyLint and correct as any issues.
